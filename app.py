@@ -117,11 +117,11 @@ stopwords = stopwords = nltk.corpus.stopwords.words("english")
 other_exclusions = ["#ff","ff","rt"]
 stopwords.extend(other_exclusions)
 
-
+app = Flask(__name__)
 pre_trained_model = pickle.load(open('Logistic_R_1_5ngrams.pkl','rb'))
 word_tfidf = pickle.load(open('wordtfidf.pkl','rb'))
 pos_tag_tfidf = pickle.load(open('postagtfidf.pkl','rb'))
-app = Flask(__name__)
+
 
 @app.route('/')
 def home():
