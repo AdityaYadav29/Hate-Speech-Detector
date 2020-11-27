@@ -4,7 +4,7 @@ pandas>=0.19
 Flask==1.1.2
 Werkzeug==1.0.1
 vadersentiment==3.3.2
-scikit_learn>=0.18
+scikit_learn==0.22.1
 markupsafe==1.1.1
 jinja2==2.11.2
 matplotlib>=1.4.3
