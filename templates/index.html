@@ -27,7 +27,7 @@
 <body>
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Hate Speech Detector</a>
+            <a class="navbar-brand" href="#">Sentiment Analysis</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,20 +37,20 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.kaiciid.org/news-events/news/what-hate-speech">Know more about Hate Speech</a>
+                        <a class="nav-link" href="https://www.kaiciid.org/news-events/news/what-hate-speech">Know more</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="css-purpose">
             <div  class="jumbotron">
-                <h1 class="display-4">What is a hateSpeech detector?</h1>
-                <p class="lead">It detects public speech that expresses hate or encourages violence towards a person or group based on something such as race, religion, sex, or sexual orientation.</p>
-                <p class="lead">This web app is powered with ML, NLP which identifies whether the message is a hate speech or offensive speech or just normal speech.</p>
+                <h1 class="display-4">What is Sentiment Analysis?</h1>
+                <p class="lead">Sentiment analysis (or opinion mining) is a natural language processing technique used to determine whether data is positive, negative or neutral. Sentiment analysis is often performed on textual data to help businesses monitor brand and product sentiment in customer feedback, and understand customer needs.</p>
+                <p class="lead">This web app is powered with ML, NLP which identifies the sentiment of the text.</p>
 
                 <form action= "{{url_for('predict')}}" method="post">
                     <br>
-                    <b><p class="lead">Write or paste a text in the text box below to find out is it a hate speech or offensive speech or just normal text?</p></b>
+                    <b><p class="lead">Write or paste a text in the text box below to find out it's sentiment text?</p></b>
                     <textarea name = "text" class="form-control" id="exampleFormControlTextarea1"></textarea>
                     </p>
                     <button type="submit" onclick="myFunction()"class="btn btn-primary">Check</button>
